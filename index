@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Three Works • Chris Williams</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <meta name="description" content="Three representative works with one-paragraph artist statements, scores, and recordings.">
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <h1>Chris Williams — Portfolio (3 Works)</h1>
+      <p>Assistant Professor in Music Composition application — University of Chicago</p>
+      <hr>
+    </header>
+
+    <!-- Work 1 -->
+    <section class="work">
+      <h2>Title of Work One (2024)</h2>
+      <p class="meta">~10′ — saxophone quartet — premiere: Abele Saxophone Quartet</p>
+      <p class="statement">
+        [Single-paragraph artist statement: 100–150 words. What the piece explores,
+        how the materials/process work, how it relates to your broader practice.
+        Avoid program-note sprawl; keep it crisp.]
+      </p>
+      <p class="links">
+        <a href="scores/Work1_Score.pdf">Score (PDF)</a> ·
+        <a href="https://vimeo.com/xxxxxx">Recording (Video)</a> ·
+        <a href="https://soundcloud.com/xxxxxx">Audio</a>
+      </p>
+    </section>
+
+    <!-- Work 2 -->
+    <section class="work">
+      <h2>Title of Work Two (2023)</h2>
+      <p class="meta">~12′ — ensemble/instrumentation</p>
+      <p class="statement">[One-paragraph artist statement.]</p>
+      <p class="links">
+        <a href="scores/Work2_Score.pdf">Score (PDF)</a> ·
+        <a href="https://youtu.be/xxxxxx">Recording (Video)</a>
+      </p>
+    </section>
+
+    <!-- Work 3 -->
+    <section class="work">
+      <h2>Title of Work Three (2022)</h2>
+      <p class="meta">~8′ — electronics / fixed media / intermedia</p>
+      <p class="statement">[One-paragraph artist statement.]</p>
+      <p class="links">
+        <a href="scores/Work3_Score.pdf">Score (PDF)</a> ·
+        <a href="https://vimeo.com/xxxxxx">Recording (Video)</a>
+      </p>
+    </section>
+
+    <footer>
+      <hr>
+      <p>Contact: your.email@domain • Website: your-site.com</p>
+    </footer>
+  </main>
+</body>
+</html>
