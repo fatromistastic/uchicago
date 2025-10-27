@@ -3,60 +3,214 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Portfolio — Three Works • Chris Williams</title>
-  <link rel="stylesheet" href="assets/styles.css" />
+  <title>Chris Williams — Portfolio (3 Works)</title>
   <meta name="description" content="Three representative works with one-paragraph artist statements, scores, and recordings.">
+  <style>
+    /* ---------------------------
+       GLOBAL STYLES
+    ----------------------------*/
+    :root {
+      --bg: #000;
+      --fg: #f2f2f2;
+      --accent: #999;
+      --link: #fff;
+      --link-hover: #c2c2c2;
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      --font-serif: "Georgia", "Times New Roman", serif;
+      --max-width: 820px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg);
+      color: var(--fg);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    main {
+      max-width: var(--max-width);
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+      animation: fadein 1s ease-in;
+    }
+
+    h1 {
+      font-family: var(--font-serif);
+      font-size: 1.8rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.5px;
+    }
+
+    h2 {
+      font-family: var(--font-serif);
+      font-size: 1.4rem;
+      font-weight: 400;
+      margin: 2.5rem 0 0.3rem;
+    }
+
+    p {
+      margin: 0.5rem 0 1rem;
+    }
+
+    .meta {
+      color: var(--accent);
+      font-size: 0.95rem;
+      letter-spacing: 0.2px;
+    }
+
+    .statement {
+      font-size: 1rem;
+      margin-top: 0.8rem;
+    }
+
+    .links {
+      font-size: 0.95rem;
+      margin-top: 0.8rem;
+    }
+
+    .links a {
+      color: var(--link);
+      text-decoration: none;
+      border-bottom: 1px solid var(--accent);
+      transition: color 0.2s ease, border-color 0.2s ease;
+    }
+
+    .links a:hover,
+    .links a:focus {
+      color: var(--link-hover);
+      border-color: var(--link-hover);
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #333;
+      margin: 2rem 0;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      color: var(--accent);
+      font-size: 0.9rem;
+      border-top: 1px solid #333;
+      padding-top: 1rem;
+    }
+
+    /* ---------------------------
+       MEDIA EMBEDS
+    ----------------------------*/
+    iframe, audio {
+      display: block;
+      margin: 1rem 0;
+      max-width: 100%;
+      border: none;
+    }
+
+    iframe {
+      width: 100%;
+      height: 340px;
+      background: #111;
+    }
+
+    audio {
+      width: 100%;
+    }
+
+    /* ---------------------------
+       ANIMATIONS
+    ----------------------------*/
+    @keyframes fadein {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    section.work {
+      animation: fadein 1.5s ease forwards;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 1.5rem; }
+      h2 { font-size: 1.2rem; }
+    }
+  </style>
 </head>
 <body>
-  <main class="wrap">
+  <main>
     <header>
       <h1>Chris Williams — Portfolio (3 Works)</h1>
-      <p>Assistant Professor in Music Composition application — University of Chicago</p>
+      <p>Assistant Professor in Music Composition application · University of Chicago</p>
       <hr>
     </header>
 
     <!-- Work 1 -->
     <section class="work">
-      <h2>Title of Work One (2024)</h2>
-      <p class="meta">~10′ — saxophone quartet — premiere: Abele Saxophone Quartet</p>
+      <h2>All That’s Gentle Turns (2024)</h2>
+      <p class="meta">~10′ — Saxophone Quartet — Premiere: Abele Saxophone Quartet</p>
       <p class="statement">
-        [Single-paragraph artist statement: 100–150 words. What the piece explores,
-        how the materials/process work, how it relates to your broader practice.
-        Avoid program-note sprawl; keep it crisp.]
+        This work explores the interaction between deterministic and stochastic compositional processes,
+        juxtaposing algorithmic structures in OpenMusic with latent-space interpolation via a fine-tuned
+        language model. The quartet’s harmonic architecture is informed by Fourier analyses of harmonic
+        spectra and poetic structures drawn from visionary texts, creating both precision and fragility in sound.
       </p>
       <p class="links">
-        <a href="scores/Work1_Score.pdf">Score (PDF)</a> ·
-        <a href="https://vimeo.com/xxxxxx">Recording (Video)</a> ·
-        <a href="https://soundcloud.com/xxxxxx">Audio</a>
+        <a href="scores/AllThatsGentleTurns_Score.pdf">Score (PDF)</a> ·
+        <a href="https://vimeo.com/example">Video</a>
       </p>
+      <iframe src="https://www.youtube.com/embed/exampleID" title="Recording of All That’s Gentle Turns" allowfullscreen></iframe>
     </section>
 
     <!-- Work 2 -->
     <section class="work">
-      <h2>Title of Work Two (2023)</h2>
-      <p class="meta">~12′ — ensemble/instrumentation</p>
-      <p class="statement">[One-paragraph artist statement.]</p>
-      <p class="links">
-        <a href="scores/Work2_Score.pdf">Score (PDF)</a> ·
-        <a href="https://youtu.be/xxxxxx">Recording (Video)</a>
+      <h2>We Have Seen It Rising (2023)</h2>
+      <p class="meta">~12′ — Solo Viola</p>
+      <p class="statement">
+        Written for performer Bella Bozic, this piece investigates resonant transformation and the
+        acoustic illusions of bow pressure and harmonic activation. The structure maps Fourier vectors
+        of pitch-class content to physical gesture, allowing timbral states to spiral outward from silence.
       </p>
+      <p class="links">
+        <a href="scores/WeHaveSeenItRising_Score.pdf">Score (PDF)</a> ·
+        <a href="https://soundcloud.com/example">Audio</a>
+      </p>
+      <audio controls>
+        <source src="https://your-soundcloud-link/track.mp3" type="audio/mpeg">
+      </audio>
     </section>
 
     <!-- Work 3 -->
     <section class="work">
-      <h2>Title of Work Three (2022)</h2>
-      <p class="meta">~8′ — electronics / fixed media / intermedia</p>
-      <p class="statement">[One-paragraph artist statement.]</p>
-      <p class="links">
-        <a href="scores/Work3_Score.pdf">Score (PDF)</a> ·
-        <a href="https://vimeo.com/xxxxxx">Recording (Video)</a>
+      <h2>Between Visible and Hidden Worlds (2022)</h2>
+      <p class="meta">~9′ — Electronics / Fixed Media</p>
+      <p class="statement">
+        This fixed-media composition translates DFT transformations of harmonic spectra into evolving
+        sound fields. Combining generative synthesis, field recording, and algorithmic modulation, it
+        situates sonic material between analytical abstraction and sensory immediacy.
       </p>
+      <p class="links">
+        <a href="scores/BetweenVisibleAndHiddenWorlds_Score.pdf">Score (PDF)</a> ·
+        <a href="https://vimeo.com/example">Video</a>
+      </p>
+      <iframe src="https://player.vimeo.com/video/exampleID" title="Recording of Between Visible and Hidden Worlds"></iframe>
     </section>
 
     <footer>
-      <hr>
-      <p>Contact: your.email@domain • Website: your-site.com</p>
+      <p>© Chris Williams · <a href="mailto:chris@madeupemail.com">chris@madeupemail.com</a></p>
     </footer>
   </main>
 </body>
 </html>
+
